@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-opencages",
+  "version": "0.1.0",
+  "description": "OpenCage forward + reverse geocoding (free key, 2500/day)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "opencages"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-opencages"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

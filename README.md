@@ -1,15 +1,21 @@
-# mcp-opencages
+# @pipeworx/opencages
 
-OpenCage MCP.
+[OpenCage](https://opencagedata.com) MCP — forward + reverse geocoding aggregator (OSM, GeoNames, Who's On First, etc). Free tier 2500 req/day. Key required.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
+## Auth
+
+- Platform: `PLATFORM_OPENCAGE_KEY`. BYO: `?_apiKey=…`.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `geocode` | Forward geocode. |
-| `reverse` | Reverse geocode. |
+- `geocode(query, language?, limit?, countrycode?, bounds?, no_annotations?, abbrv?)` — forward geocode
+- `reverse(lat, lon, language?, no_annotations?, abbrv?)` — reverse geocode
+
+## Data source
+
+`https://api.opencagedata.com/geocode/v1/json`
 
 ## Quick Start
 
@@ -25,7 +31,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -49,7 +55,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License

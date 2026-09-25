@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/opencages",
   "title": "Opencages",
-  "description": "OpenCage forward + reverse geocoding (free key, 2500/day)",
-  "version": "0.1.0",
+  "description": "OpenCage MCP.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/opencages",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-opencages",

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "geocode",
+    "description": "Forward-geocode an address or place name to latitude/longitude using OpenCage (requires API key); supports country-code filtering, bounding box, and language; returns coordinates and structured address components.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "number"
+        },
+        "countrycode": {
+          "type": "string",
+          "description": "Comma-sep ISO-3166-1 alpha-2 codes."
+        },
+        "bounds": {
+          "type": "string",
+          "description": "sw_lon,sw_lat,ne_lon,ne_lat"
+        },
+        "no_annotations": {
+          "type": "boolean"
+        },
+        "abbrv": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "reverse",
+    "description": "Reverse-geocode a latitude/longitude pair to a human-readable address using OpenCage (requires API key); returns formatted address, country, city, postcode, and timezone.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        },
+        "language": {
+          "type": "string"
+        },
+        "no_annotations": {
+          "type": "boolean"
+        },
+        "abbrv": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    }
+  }
+]
